@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:v_choice/page/signup.dart';
 import 'package:v_choice/page/utility/constants.dart';
 
 import 'home2.dart';
@@ -253,7 +254,16 @@ class _LoginScreenState extends State<LoginScreen> {
 
   Widget _buildSignupBtn() {
     return GestureDetector(
-      onTap: () => print('Sign Up Button Pressed'),
+      onTap: () => {
+        Navigator.pushAndRemoveUntil(
+            context,
+            PageRouteBuilder(
+              pageBuilder: (context, a, b) => Signup(),
+              transitionDuration: Duration(seconds: 0),
+            ),
+                (route) => false)
+      },
+      //onTap: () => print('Sign Up Button Pressed'),
       child: RichText(
         text: const TextSpan(
           children: [

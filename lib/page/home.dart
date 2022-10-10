@@ -142,7 +142,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         const EventScreen(),
                         const NewsScreen(),
                         AdsScreen(),
-                        const DonationScreen(),
+                        DonationScreen(),
                         DonationScreen2(),
                         Volunteer(),
 

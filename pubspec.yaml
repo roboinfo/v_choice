@@ -50,6 +50,9 @@ dependencies:
   onesignal_flutter: ^3.3.2
   social_login_buttons: ^1.0.6+2
   flutter_signin_button: ^2.0.0
+  firebase_core: ^1.23.0
+  firebase_auth: ^3.11.2
+  cloud_firestore: ^3.4.9
 
 
   #flutter_launcher_icons: ^0.9.3
