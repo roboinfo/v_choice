@@ -142,6 +142,7 @@ class _SignupState extends State<Signup> {
               child: ListView(
                 children: [
 
+                  const SizedBox(height: 40.0),
                   Container(
                     child: Center(
                       child: const Text(
@@ -302,34 +303,55 @@ class _SignupState extends State<Signup> {
                   const SizedBox(height: 10.0),
 
                   Container(
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        ElevatedButton(
-                          onPressed: () {
-                            // Validate returns true if the form is valid, otherwise false.
-                            if (_formKey.currentState!.validate()) {
-                              setState(() {
-                                email = emailController.text;
-                                password = passwordController.text;
-                                confirmPassword = confirmPasswordController.text;
-                              });
-                              registration();
-                            }
-                          },
-                          child: Text(
-                            'Sign Up',
-                            style: TextStyle(fontSize: 18.0),
+                    padding: const EdgeInsets.symmetric(vertical: 20.0),
+                    width: double.infinity,
+                    child: ElevatedButton(
+                      onPressed: () {
+                        // Validate returns true if the form is valid, otherwise false.
+                        if (_formKey.currentState!.validate()) {
+                          setState(() {
+                            email = emailController.text;
+                            password = passwordController.text;
+                            confirmPassword = confirmPasswordController.text;
+                          });
+                          registration();
+                        }
+                      },
+                      style: ButtonStyle(
+                        backgroundColor:
+                        MaterialStateProperty.all(Colors.white),
+                        padding: MaterialStateProperty.all(EdgeInsets.all(6)),
+                        shape:
+                        MaterialStateProperty.all<RoundedRectangleBorder>(
+                          RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(25.0),
                           ),
                         ),
-                      ],
+                      ),
+
+                      child: const Text(
+                        'Sign Up',
+                        style: TextStyle(
+                          color: Colors.blue,
+                          letterSpacing: 1.5,
+                          fontSize: 22.0,
+                          fontWeight: FontWeight.bold,
+                          fontFamily: 'OpenSans',
+                        ),
+                      ),
                     ),
                   ),
                   Container(
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        Text("Already have an Account? "),
+                        Text("Already have an Account? ",
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 16.0,
+                            fontWeight: FontWeight.w400,
+                          ),
+                        ),
                         TextButton(
                             onPressed: () => {
                                   Navigator.pushReplacement(
@@ -342,7 +364,7 @@ class _SignupState extends State<Signup> {
                                     ),
                                   )
                                 },
-                            child: Text('Login'))
+                            child: Text('Sign In'))
                       ],
                     ),
                   )
