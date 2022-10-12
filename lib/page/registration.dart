@@ -104,10 +104,10 @@ class _VolunteerState extends State<Volunteer> {
         .catchError((error) => print('Failed to Add user: $error'));
   }
 
-  bool Value = false;
-  bool Value1 = false;
-  bool Value2 = false;
-  bool Value3 = false;
+  bool Election_Campaigon = false;
+  bool Emergency = false;
+  bool Medical = false;
+  bool Community_Services = false;
 
   @override
   Widget build(BuildContext context) {
@@ -723,12 +723,12 @@ class _VolunteerState extends State<Volunteer> {
                               child: Row(
                                 children: [
                                   Checkbox(
-                                    value: Value,
+                                    value: Election_Campaigon,
                                     onChanged: (value) {
                                       print(value);
 
                                       setState(() {
-                                        Value = value!;
+                                        Election_Campaigon = value!;
                                       });
                                     },
                                   ),
@@ -757,12 +757,12 @@ class _VolunteerState extends State<Volunteer> {
                               child: Row(
                                 children: <Widget>[
                                   Checkbox(
-                                    value: Value1,
+                                    value: Emergency,
                                     onChanged: (value) {
                                       print(value);
 
                                       setState(() {
-                                        Value1 = value!;
+                                        Emergency = value!;
                                       });
                                     },
                                   ),
@@ -791,12 +791,12 @@ class _VolunteerState extends State<Volunteer> {
                               child: Row(
                                 children: [
                                   Checkbox(
-                                    value: Value2,
+                                    value: Medical,
                                     onChanged: (value) {
                                       print(value);
 
                                       setState(() {
-                                        Value2 = value!;
+                                        Medical = value!;
                                       });
                                     },
                                   ),
@@ -825,12 +825,12 @@ class _VolunteerState extends State<Volunteer> {
                               child: Row(
                                 children: [
                                   Checkbox(
-                                    value: Value3,
+                                    value: Community_Services,
                                     onChanged: (value) {
                                       print(value);
 
                                       setState(() {
-                                        Value3 = value!;
+                                        Community_Services = value!;
                                       });
                                     },
                                   ),
@@ -873,7 +873,10 @@ class _VolunteerState extends State<Volunteer> {
                                     "state": stateController.text,
                                     "pocode": pocodeController.text,
                                     "country": countryController.text,
-
+                                    "Election_Campaigon": Election_Campaigon.toString(),
+                                    "Emergency": Emergency.toString(),
+                                    "Medical": Medical.toString(),
+                                    "Community_Services": Community_Services.toString(),
 
                                   };
 
