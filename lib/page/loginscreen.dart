@@ -90,27 +90,27 @@ class _LoginScreenState extends State<LoginScreen> {
           child: Container(
 
 
-            decoration: const BoxDecoration(
-                gradient: LinearGradient(
-                    begin: Alignment.topLeft,
-                    end: Alignment.bottomRight,
-                    colors: [Colors.purple, Colors.orange])),
-
-            // height: double.infinity,
-            // width: double.infinity,
             // decoration: const BoxDecoration(
-            //   gradient: LinearGradient(
-            //     begin: Alignment.topCenter,
-            //     end: Alignment.bottomCenter,
-            //     colors: [
-            //       Color(0xFF73AEF5),
-            //       Color(0xFF61A4F1),
-            //       Color(0xFF478DE0),
-            //       Color(0xFF398AE5),
-            //     ],
-            //     stops: [0.1, 0.4, 0.7, 0.9],
-            //   ),
-            // ),
+            //     gradient: LinearGradient(
+            //         begin: Alignment.topLeft,
+            //         end: Alignment.bottomRight,
+            //         colors: [Colors.purple, Colors.orange])),
+
+            height: double.infinity,
+            width: double.infinity,
+            decoration: const BoxDecoration(
+              gradient: LinearGradient(
+                begin: Alignment.topCenter,
+                end: Alignment.bottomCenter,
+                colors: [
+                  Color(0xFF73AEF5),
+                  Color(0xFF61A4F1),
+                  Color(0xFF478DE0),
+                  Color(0xFF398AE5),
+                ],
+                stops: [0.1, 0.4, 0.7, 0.9],
+              ),
+            ),
 
 
             child: Form(
@@ -433,7 +433,7 @@ class _LoginScreenState extends State<LoginScreen> {
                                   ),
                                       (route) => false)
                             },
-                            child: Text('Signup'),
+                            child: Text('Signup',style: kLabelStyle,),
                           ),
                         ],
                       ),
