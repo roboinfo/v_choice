@@ -32,8 +32,8 @@ class Notifications extends StatelessWidget {
                     ],
                   ),
                   child: const Center(
-                    child: Text('1]. Prime Minister Narendra Modi will be '
-                        '         Live At 11.30pm',
+                    child: Text('1]. RoboInfoCom will be '
+                        '\n Live At 11.30pm',
                       textAlign: TextAlign.center,
                       style: TextStyle(
                       color: Colors.black,fontWeight: FontWeight.bold,fontSize: 20
@@ -62,8 +62,8 @@ class Notifications extends StatelessWidget {
                   ],
                 ),
                 child: const Center(
-                  child: Text('2].Prime Minister Narendra Modi will be '
-                      '         Live At 05.30pm',
+                  child: Text('2].RoboInfoCom will be '
+                      '\n Live At 05.30pm',
                     textAlign: TextAlign.center,
                     style: TextStyle(
                       color: Colors.black,fontWeight: FontWeight.bold,fontSize: 20
