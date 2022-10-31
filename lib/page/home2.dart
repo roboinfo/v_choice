@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:v_choice/page/favScreen.dart';
+import 'package:v_choice/youtube/screens/favScreen.dart';
 import 'bottomseach.dart';
 import 'Messages.dart';
 import 'home.dart';

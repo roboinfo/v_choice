@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:v_choice/page/home2.dart';
-import 'package:v_choice/page/favScreen.dart';
+import 'package:v_choice/youtube/screens/favScreen.dart';
 
 
 class Profile extends StatefulWidget {

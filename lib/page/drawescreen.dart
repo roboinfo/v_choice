@@ -2,7 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:v_choice/page/articalscreen.dart';
 import 'package:v_choice/page/eventscreen.dart';
-import 'package:v_choice/page/favScreen.dart';
+import 'package:v_choice/youtube/screens/favScreen.dart';
 import 'package:v_choice/page/loginscreen.dart';
 import 'package:v_choice/page/Profile.dart';
 import 'package:v_choice/page/newsscreen.dart';

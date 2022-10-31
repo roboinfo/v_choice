@@ -1,5 +1,5 @@
 //import 'package:flutter_youtube_api/models/video_model.dart';
-import 'package:v_choice/models/video_model.dart';
+import 'package:v_choice/youtube/models/video_model.dart';
 
 class Channel {
 

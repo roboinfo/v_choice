@@ -3,11 +3,12 @@ import 'package:flutter/material.dart';
 //import 'package:flutter_youtube_api/models/video_model.dart';
 //import 'package:flutter_youtube_api/screens/video_screen.dart';
 //import 'package:flutter_youtube_api/services/api_service.dart';
-import 'package:v_choice/models/channel_model.dart';
-import 'package:v_choice/page/video_screen.dart';
 
-import '../models/video_model.dart';
-import '../services/api_service.dart';
+import 'package:v_choice/youtube/models/channel_model.dart';
+import 'package:v_choice/youtube/models/video_model.dart';
+import 'package:v_choice/youtube/screens/video_screen.dart';
+import 'package:v_choice/youtube/services/api_service.dart';
+
 
 class FavScreen extends StatefulWidget {
   @override
