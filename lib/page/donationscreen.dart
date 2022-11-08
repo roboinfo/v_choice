@@ -5,6 +5,7 @@ import 'package:v_choice/page/drawescreen.dart';
 import 'package:v_choice/page/home2.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:pay/pay.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -22,6 +23,18 @@ class DonationScreen extends StatefulWidget {
 }
 
 class _DonationScreenState extends State<DonationScreen> {
+
+  // Google Pay button
+  static const _paymentItems = [
+    PaymentItem(
+      label: 'Total',
+      amount: '99.99',
+      status: PaymentItemStatus.final_price,
+    )
+  ];
+
+  // Google Pay button
+
   final Future<FirebaseApp> _initialization = Firebase.initializeApp();
 
   final Stream<QuerySnapshot> studentsStream =
@@ -96,6 +109,7 @@ class _DonationScreenState extends State<DonationScreen> {
     'Bihar',
     'Kashmir'
   ];
+
   //City Dropdown
 
   @override
@@ -360,7 +374,7 @@ class _DonationScreenState extends State<DonationScreen> {
                               flex: 1,
                               fit: FlexFit.tight,
                               child: Container(
-                                //alignment: Alignment.center,
+                                  //alignment: Alignment.center,
                                   padding: const EdgeInsets.only(
                                       top: 10.0, left: 20.0),
                                   child: const Text(
@@ -665,15 +679,15 @@ class _DonationScreenState extends State<DonationScreen> {
                                     ),
                                     child: DropdownButton(
                                       items: _State.map(
-                                              (value) => DropdownMenuItem(
-                                            child: Text(
-                                              value,
-                                              style: TextStyle(
-                                                  color: Color.fromRGBO(
-                                                      0, 0, 0, 0.70)),
-                                            ),
-                                            value: value,
-                                          )).toList(),
+                                          (value) => DropdownMenuItem(
+                                                child: Text(
+                                                  value,
+                                                  style: TextStyle(
+                                                      color: Color.fromRGBO(
+                                                          0, 0, 0, 0.70)),
+                                                ),
+                                                value: value,
+                                              )).toList(),
                                       onChanged: (selectedAccountType) {
                                         print('$selectedAccountType');
                                         setState(() {
@@ -698,7 +712,6 @@ class _DonationScreenState extends State<DonationScreen> {
                             ),
                           ],
                         ),
-
 
                         const SizedBox(
                           height: 5,
@@ -817,6 +830,23 @@ class _DonationScreenState extends State<DonationScreen> {
                             ),
                           ],
                         ),
+
+                        // Google Pay button
+
+                        GooglePayButton(
+                          paymentConfigurationAsset: 'gpay.json',
+                          paymentItems: _paymentItems,
+                          type: GooglePayButtonType.pay,
+                          margin: const EdgeInsets.only(top: 15.0),
+                          onPaymentResult: (data) {
+                            print(data);
+                          },
+                          loadingIndicator: const Center(
+                            child: CircularProgressIndicator(),
+                          ),
+                        ),
+                        // Google Pay button
+
                         const SizedBox(
                           height: 15,
                         ),
@@ -841,6 +871,7 @@ class _DonationScreenState extends State<DonationScreen> {
                             ),
                           ],
                         ),
+
                         const SizedBox(
                           height: 5,
                         ),

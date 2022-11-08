@@ -43,7 +43,7 @@ class _StoryViewPageState extends State<StoryViewPage> {
           // StoryItem.text(title: ' ',textStyle: TextStyle(
           //   fontSize: 20,fontWeight: FontWeight.bold,color: Colors.black
           // ),
-            //  backgroundColor: Colors.grey),
+          //    backgroundColor: Colors.grey),
 
           StoryItem.pageImage(url: 'https://static.vecteezy.com/system/resources/thumbnails/'
               '009/951/832/small/politician-cartoon-hand-drawn-illustration-with-election-and-'
