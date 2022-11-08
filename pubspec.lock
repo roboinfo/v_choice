@@ -238,12 +238,12 @@ packages:
     source: hosted
     version: "3.3.0"
   flutter_inappwebview:
-    dependency: transitive
+    dependency: "direct main"
     description:
       name: flutter_inappwebview
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "5.4.3+7"
+    version: "5.7.1"
   flutter_instagram_stories:
     dependency: "direct main"
     description:

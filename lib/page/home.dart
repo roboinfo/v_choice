@@ -134,7 +134,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     tabs: const [
                       Tab(text: 'Articles',),
                       Tab(text: 'Events'),
-                      Tab(text: 'News'),
+                      Tab(text: 'RoboInfoCom'),
                       Tab(text: 'Advertisement'),
                       Tab(text: 'Donation'),
                       Tab(text: 'Private Donation'),
