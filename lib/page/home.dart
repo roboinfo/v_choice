@@ -28,14 +28,14 @@ class Home extends StatelessWidget {
         }
 
       },
-    child: MaterialApp(
-      title: 'Voter\'s Choice',
-      debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
+      child: MaterialApp(
+        title: 'Voter\'s Choice',
+        debugShowCheckedModeBanner: false,
+        theme: ThemeData(
+          primarySwatch: Colors.blue,
+        ),
+        home: const MyHomePage(),
       ),
-      home: const MyHomePage(),
-    ),
     );
   }
 }
@@ -68,31 +68,31 @@ class _MyHomePageState extends State<MyHomePage> {
                 },
               ),
               IconButton(
-                icon: const Icon(Icons.logout),
-                onPressed:(){
-                  showDialog(
-                    context: context,
-                    builder: (BuildContext context) {
-                      return AlertDialog(
-                        scrollable: true,
-                        backgroundColor: Colors.grey,
-                       // clipBehavior: Clip.antiAlias,
+                  icon: const Icon(Icons.logout),
+                  onPressed:(){
+                    showDialog(
+                      context: context,
+                      builder: (BuildContext context) {
+                        return AlertDialog(
+                          scrollable: true,
+                          backgroundColor: Colors.grey,
+                          // clipBehavior: Clip.antiAlias,
 
-                        title: const Text("Sure To Logout "),
-                        //content: ListView(),
-                        actions: [
-                          ElevatedButton(onPressed: () {
-                            Navigator.push(context, MaterialPageRoute(builder: (context) =>LoginScreen()));
-                          }, child: const Text("Logout")),
-                          ElevatedButton(onPressed: () {
-                            Navigator.pop(context);
-                          }, child: const Text("Cancel")),
-                        ],
-                      );
-                    },
-                  );
-                 // _bottomSheet(context);
-                }
+                          title: const Text("Sure To Logout "),
+                          //content: ListView(),
+                          actions: [
+                            ElevatedButton(onPressed: () {
+                              Navigator.push(context, MaterialPageRoute(builder: (context) =>LoginScreen()));
+                            }, child: const Text("Logout")),
+                            ElevatedButton(onPressed: () {
+                              Navigator.pop(context);
+                            }, child: const Text("Cancel")),
+                          ],
+                        );
+                      },
+                    );
+                    // _bottomSheet(context);
+                  }
                 // Navigator.push(context, MaterialPageRoute(builder: (context) => ProfilePage()));
                 //_showMessageDialog(context);
 
@@ -158,4 +158,3 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 }
-
