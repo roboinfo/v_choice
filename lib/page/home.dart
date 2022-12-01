@@ -104,27 +104,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 IconButton(
                     icon: const Icon(Icons.logout),
                     onPressed:(){
-                      showDialog(
-                        context: context,
-                        builder: (BuildContext context) {
-                          return AlertDialog(
-                            scrollable: true,
-                            backgroundColor: Colors.grey,
-                            // clipBehavior: Clip.antiAlias,
-
-                            title: const Text("Sure To Logout "),
-                            //content: ListView(),
-                            actions: [
-                              ElevatedButton(onPressed: () {
-                                Navigator.push(context, MaterialPageRoute(builder: (context) =>LoginScreen()));
-                              }, child: const Text("Logout")),
-                              ElevatedButton(onPressed: () {
-                                Navigator.pop(context);
-                              }, child: const Text("Cancel")),
-                            ],
-                          );
-                        },
-                      );
+                      showExitPopup();
                       // _bottomSheet(context);
                     }
                   // Navigator.push(context, MaterialPageRoute(builder: (context) => ProfilePage()));
