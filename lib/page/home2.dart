@@ -1,62 +1,67 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_secure_storage/flutter_secure_storage.dart';
+import 'package:v_choice/page/splashscreen.dart';
 import 'package:v_choice/youtube/screens/favScreen.dart';
 import 'bottomseach.dart';
 import 'Messages.dart';
 import 'home.dart';
 import 'Profile.dart';
 
-
-
 class home2 extends StatelessWidget {
-
   static const String title = 'AppBar';
 
   @override
   Widget build(BuildContext context) => const MaterialApp(
-    debugShowCheckedModeBanner: true,
-    title: 'Voter\'s Choice',
-    // theme: ThemeData(
-    //   primaryColor: Colors.purple,
-    // ),
-    home: MainPage(),
-  );
+        debugShowCheckedModeBanner: true,
+        title: 'Voter\'s Choice',
+        // theme: ThemeData(
+        //   primaryColor: Colors.purple,
+        // ),
+        home: MainPage(),
+      );
 }
+
 class MainPage extends StatefulWidget {
   const MainPage({Key? key}) : super(key: key);
 
   @override
   _MainPageState createState() => _MainPageState();
-
 }
-class _MainPageState extends State<MainPage> {
 
+class _MainPageState extends State<MainPage> {
   int index = 0;
+  final storage = new FlutterSecureStorage();
+
   @override
   Widget build(BuildContext context) {
     Future<bool> showExitPopup() async {
-      return await showDialog( //show confirm dialogue 
-        //the return value will be from "Yes" or "No" options
-        context: context,
-        builder: (context) => AlertDialog(
-          title: Text('Exit App'),
-          content: Text('Do you want to exit an App?'),
-          actions:[
-            ElevatedButton(
-              onPressed: () => Navigator.of(context).pop(false),
-              //return false when click on "NO"
-              child:Text('No'),
-            ),
+      return await showDialog(
+            //show confirm dialogue
+            //the return value will be from "Yes" or "No" options
+            context: context,
+            builder: (context) => AlertDialog(
+              title: Text('Exit App'),
+              content: Text('Do you want to exit an App?'),
+              actions: [
+                ElevatedButton(
+                  onPressed: () => Navigator.of(context).pop(false),
+                  //return false when click on "NO"
+                  child:Text('No'),
+                ),
 
-            ElevatedButton(
-              onPressed: () => Navigator.of(context).pop(true),
-              //return true when click on "Yes"
-              child:Text('Yes'),
-            ),
+                ElevatedButton(
+                  onPressed: () => Navigator.of(context).pop(true),
+                  //return true when click on "Yes"
+                  child:Text('Yes'),
+                ),
 
-          ],
-        ),
-      )??false; //if showDialouge had returned null, then return false
+              ],
+            ),
+          ) ??
+          false; //if showDialouge had returned null, then return false
     }
+
     return WillPopScope(
       onWillPop: showExitPopup,
       child: Scaffold(
@@ -66,14 +71,12 @@ class _MainPageState extends State<MainPage> {
       ),
     );
   }
+
   Widget buildBottomBar() {
     const style = TextStyle(color: Colors.white);
     return BottomNavigationBar(
-
-
       selectedItemColor: Colors.blueAccent,
-
-      unselectedItemColor: Colors.black,
+      unselectedItemColor: Colors.black87,
       backgroundColor: Colors.lightBlueAccent,
       currentIndex: index,
       items: const [
@@ -82,7 +85,8 @@ class _MainPageState extends State<MainPage> {
           label: 'Home',
         ),
         BottomNavigationBarItem(
-          icon: Icon(Icons.search,
+          icon: Icon(
+            Icons.search,
           ),
           label: 'Search',
         ),
@@ -102,6 +106,7 @@ class _MainPageState extends State<MainPage> {
       onTap: (int index) => setState(() => this.index = index),
     );
   }
+
   Widget buildPages() {
     switch (index) {
       case 0:
@@ -119,8 +124,3 @@ class _MainPageState extends State<MainPage> {
     }
   }
 }
-
-
-
-
-

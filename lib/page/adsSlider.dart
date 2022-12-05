@@ -54,7 +54,7 @@ class _MainSliderState extends State<adsSlider> {
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(5.0),
                     image: const DecorationImage(
-                      image: AssetImage("assets/ad2.jpg"),
+                      image: AssetImage("assets/ad4.jpg"),
                       fit: BoxFit.cover,
                     ),
                   ),
@@ -74,6 +74,25 @@ class _MainSliderState extends State<adsSlider> {
                     borderRadius: BorderRadius.circular(5.0),
                     image: const DecorationImage(
                       image: AssetImage("assets/ad3.jpg"),
+                      fit: BoxFit.cover,
+                    ),
+                  ),
+                ),
+              ),
+              InkWell(
+                onTap: () {
+                  // Navigator.push(
+                  //     context,
+                  //     PageTransition(
+                  //         type: PageTransitionType.fade, child: VideoPage()));
+                },
+                child: Container(
+                  width: width,
+                  margin: const EdgeInsets.all(5.0),
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(5.0),
+                    image: const DecorationImage(
+                      image: AssetImage("assets/ad2.jpg"),
                       fit: BoxFit.cover,
                     ),
                   ),

@@ -138,27 +138,30 @@ class _VolunteerState extends State<Volunteer> {
         if (snapshot.connectionState == ConnectionState.done) {
           return Scaffold(
             resizeToAvoidBottomInset: false,
-            backgroundColor: Colors.white,
-            appBar: AppBar(
-              backgroundColor: Colors.white70,
-              title: Row(
-                children: [
-                  Icon(
-                    Icons.how_to_reg,
-                    color: Colors.deepPurple,
-                    size: 30.0,
-                  ),
-                  const Text(
-                    '      Volunteer Registration',
-                    textAlign: TextAlign.center,
-                    style: TextStyle(
-                        color: Colors.black45,
-                        fontWeight: FontWeight.bold,
-                        fontSize: 22.0),
-                  ),
-                ],
-              ),
-            ),
+            //backgroundColor: Colors.white,
+            backgroundColor: Color.fromRGBO(0, 0, 0, 0.10),
+
+            // appBar: AppBar(
+            //   backgroundColor: Colors.white70,
+            //   title: Row(
+            //     children: [
+            //       Icon(
+            //         Icons.how_to_reg,
+            //         color: Colors.deepPurple,
+            //         size: 30.0,
+            //       ),
+            //       const Text(
+            //         '      Volunteer Registration',
+            //         textAlign: TextAlign.center,
+            //         style: TextStyle(
+            //             color: Colors.black45,
+            //             fontWeight: FontWeight.bold,
+            //             fontSize: 22.0),
+            //       ),
+            //     ],
+            //   ),
+            // ),
+
             body: Form(
               key: _formKey,
               child: SingleChildScrollView(
@@ -168,6 +171,35 @@ class _VolunteerState extends State<Volunteer> {
                       children: [
                         const SizedBox(
                           height: 5,
+                        ),
+
+                        Container(
+                          decoration: BoxDecoration(
+                            //borderRadius: BorderRadius.circular(20.0),
+                            //color: Color.fromRGBO(0, 0, 0, 0.10),
+                            color: Colors.white,
+                          ),
+
+                          child: Padding(
+                            padding: const EdgeInsets.all(5.0),
+                            child: Row(
+                              children: [
+                                Icon(
+                                  Icons.person_add_alt_1,
+                                  color: Colors.deepPurple,
+                                  size: 30.0,
+                                ),
+                                Text(
+                                  '               Volunteer Details',
+                                  textAlign: TextAlign.center,
+                                  style: TextStyle(
+                                      color: Colors.black45,
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 22.0),
+                                ),
+                              ],
+                            ),
+                          ),
                         ),
                         Row(
                           children: <Widget>[
@@ -204,7 +236,8 @@ class _VolunteerState extends State<Volunteer> {
                                   decoration: InputDecoration(
                                     filled: true,
                                     //<-- SEE HERE
-                                    fillColor: Color.fromRGBO(0, 0, 0, 0.10),
+                                    //fillColor: Color.fromRGBO(0, 0, 0, 0.10),
+                                    fillColor: Colors.white,
 
                                     hintText: 'Enter Your Full Name',
                                     labelStyle: TextStyle(fontSize: 20.0),
@@ -262,7 +295,8 @@ class _VolunteerState extends State<Volunteer> {
                                   decoration: InputDecoration(
                                     filled: true,
                                     //<-- SEE HERE
-                                    fillColor: Color.fromRGBO(0, 0, 0, 0.10),
+                                    //fillColor: Color.fromRGBO(0, 0, 0, 0.10),
+                                    fillColor: Colors.white,
 
                                     hintText: 'Enter Your Mobile No',
                                     labelStyle: TextStyle(fontSize: 20.0),
@@ -320,7 +354,8 @@ class _VolunteerState extends State<Volunteer> {
                                   decoration: InputDecoration(
                                     filled: true,
                                     //<-- SEE HERE
-                                    fillColor: Color.fromRGBO(0, 0, 0, 0.10),
+                                    //fillColor: Color.fromRGBO(0, 0, 0, 0.10),
+                                    fillColor: Colors.white,
 
                                     hintText: 'Enter Your Email ID',
                                     labelStyle: TextStyle(fontSize: 20.0),
@@ -376,7 +411,9 @@ class _VolunteerState extends State<Volunteer> {
                                 padding: const EdgeInsets.only(
                                     top: 0.0, left: 90.0, right: 20.0),
                                 child: Container(
-                                  color: Color.fromRGBO(0, 0, 0, 0.10),
+                                  //color: Color.fromRGBO(0, 0, 0, 0.10),
+                                  color: Colors.white,
+
                                   child: TextField(
                                     controller: birthdate,
                                     //editing controller of this TextField
@@ -446,7 +483,8 @@ class _VolunteerState extends State<Volunteer> {
                             decoration: InputDecoration(
                               filled: true,
                               //<-- SEE HERE
-                              fillColor: Color.fromRGBO(0, 0, 0, 0.10),
+                              //fillColor: Color.fromRGBO(0, 0, 0, 0.10),
+                              fillColor: Colors.white,
 
                               hintText: 'Street Address',
                               labelStyle: TextStyle(fontSize: 20.0),
@@ -474,7 +512,8 @@ class _VolunteerState extends State<Volunteer> {
                             decoration: InputDecoration(
                               filled: true,
                               //<-- SEE HERE
-                              fillColor: Color.fromRGBO(0, 0, 0, 0.10),
+                              //fillColor: Color.fromRGBO(0, 0, 0, 0.10),
+                              fillColor: Colors.white,
 
                               hintText: 'Street Address Line 2',
                               labelStyle: TextStyle(fontSize: 20.0),
@@ -526,7 +565,9 @@ class _VolunteerState extends State<Volunteer> {
                                 padding: const EdgeInsets.only(
                                     top: 0.0, left: 90.0, right: 20.0),
                                 child: Container(
-                                  color: Color.fromRGBO(0, 0, 0, 0.10),
+                                  //color: Color.fromRGBO(0, 0, 0, 0.10),
+                                  color: Colors.white,
+
                                   child: Container(
                                     decoration: BoxDecoration(
                                       // borderRadius: BorderRadius.circular(15.0),
@@ -606,7 +647,9 @@ class _VolunteerState extends State<Volunteer> {
                                 padding: const EdgeInsets.only(
                                     top: 0.0, left: 90.0, right: 20.0),
                                 child: Container(
-                                  color: Color.fromRGBO(0, 0, 0, 0.10),
+                                  //color: Color.fromRGBO(0, 0, 0, 0.10),
+                                  color: Colors.white,
+
                                   child: Container(
                                     decoration: BoxDecoration(
                                       // borderRadius: BorderRadius.circular(15.0),
@@ -688,7 +731,8 @@ class _VolunteerState extends State<Volunteer> {
                                   decoration: InputDecoration(
                                     filled: true,
                                     //<-- SEE HERE
-                                    fillColor: Color.fromRGBO(0, 0, 0, 0.10),
+                                    //fillColor: Color.fromRGBO(0, 0, 0, 0.10),
+                                    fillColor: Colors.white,
 
                                     hintText: 'Please Enter Postal Code',
                                     labelStyle: TextStyle(fontSize: 20.0),
@@ -743,7 +787,9 @@ class _VolunteerState extends State<Volunteer> {
                                 padding: const EdgeInsets.only(
                                     top: 0.0, left: 90.0, right: 20.0),
                                 child: Container(
-                                  color: Color.fromRGBO(0, 0, 0, 0.10),
+                                  //color: Color.fromRGBO(0, 0, 0, 0.10),
+                                  color: Colors.white,
+
                                   child: Container(
                                     decoration: BoxDecoration(
                                       // borderRadius: BorderRadius.circular(15.0),

@@ -13,37 +13,41 @@ class _ArticalScreenState extends State<ArticalScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
-      appBar: AppBar(
-        backgroundColor: Colors.white70,
-        title: Row(
-          children: [
-            Icon(Icons.article_outlined,
-              color: Colors.deepPurple,
-              size: 30.0,
-            ),
-            const Text(
-              '               Articles          ',
-              textAlign: TextAlign.center,
-              style: TextStyle(color: Colors.black45,
-                  fontWeight: FontWeight.bold,
-                  fontSize: 22.0),
-            ),
-          ],
-        ),
-      ),
+      //backgroundColor: Colors.grey,
+      backgroundColor: Color.fromRGBO(0, 0, 0, 0.10),
+      // appBar: AppBar(
+      //   backgroundColor: Colors.white70,
+      //   title: Row(
+      //     children: [
+      //       Icon(Icons.article_outlined,
+      //         color: Colors.deepPurple,
+      //         size: 30.0,
+      //       ),
+      //       const Text(
+      //         '               Articles          ',
+      //         textAlign: TextAlign.center,
+      //         style: TextStyle(color: Colors.black45,
+      //             fontWeight: FontWeight.bold,
+      //             fontSize: 22.0),
+      //       ),
+      //     ],
+      //   ),
+      // ),
+
       body: ListView(
         children: [
 
-          const SizedBox(height: 10,),
+          const SizedBox(height: 5,),
 
       Padding(
         padding: const EdgeInsets.symmetric(horizontal: 0.0),
         child:Container(
-          padding: const EdgeInsets.only(top: 10.0,bottom: 10),
+          padding: const EdgeInsets.only(top: 5.0,bottom: 5.0),
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(0.0),
-          color: Color.fromRGBO(0, 0, 0, 0.10),
+          //color: Color.fromRGBO(0, 0, 0, 0.10),
+            color: Colors.white,
+
         ),
         child: MainSlider(),
       ),
@@ -53,8 +57,9 @@ class _ArticalScreenState extends State<ArticalScreen> {
 
           Container(
               decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(20.0),
-                color: Color.fromRGBO(0, 0, 0, 0.10),
+               // borderRadius: BorderRadius.circular(20.0),
+                //color: Color.fromRGBO(0, 0, 0, 0.10),
+                color: Colors.white,
               ),
               child: Row(
                 children: [
@@ -80,17 +85,17 @@ class _ArticalScreenState extends State<ArticalScreen> {
                       text: TextSpan(
                         text: 'PM Modi tops approval ratings among list of 13 global leader ..\n',
                         style: TextStyle(
-                          color: Colors.black45,
+                          color: Colors.black54,
                           fontWeight: FontWeight.bold,
-                          fontSize: 17.0,
+                          fontSize: 15.0,
                         ),
                         children: [
                           TextSpan(
                             text: 'NEW DELHI: Prime Minister Narendra Modi remains the world’s ..........',
                             style: TextStyle(
-                              color: Colors.black45,
+                              color: Colors.black38,
                               fontWeight: FontWeight.bold,
-                              fontSize: 14.0,
+                              fontSize: 12.0,
                             ),
                           ),
                         ],
@@ -106,10 +111,11 @@ class _ArticalScreenState extends State<ArticalScreen> {
 
 
       Container(
-          decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(20.0),
-            color: Color.fromRGBO(0, 0, 0, 0.10),
-          ),
+        decoration: BoxDecoration(
+          // borderRadius: BorderRadius.circular(20.0),
+          //color: Color.fromRGBO(0, 0, 0, 0.10),
+          color: Colors.white,
+        ),
               child: Row(
                 children: [
                   Container(
@@ -134,17 +140,17 @@ class _ArticalScreenState extends State<ArticalScreen> {
                     text: TextSpan(
                       text: 'India’s dependence on Russian weapons tethers PM Modi to Pre ..\n',
                       style: TextStyle(
-                        color: Colors.black45,
+                        color: Colors.black54,
                         fontWeight: FontWeight.bold,
-                        fontSize: 17.0,
+                        fontSize: 15.0,
                       ),
                       children: [
                         TextSpan(
                           text: 'For all the success of the US-led campaign to isolate Russia ..',
                           style: TextStyle(
-                            color: Colors.black45,
+                            color: Colors.black38,
                             fontWeight: FontWeight.bold,
-                            fontSize: 14.0,
+                            fontSize: 12.0,
                           ),
                         ),
                       ],
@@ -159,9 +165,10 @@ class _ArticalScreenState extends State<ArticalScreen> {
           const SizedBox(height: 5,),
 
          Container(decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(20.0),
-              color: Color.fromRGBO(0, 0, 0, 0.10),
-            ),
+           // borderRadius: BorderRadius.circular(20.0),
+           //color: Color.fromRGBO(0, 0, 0, 0.10),
+           color: Colors.white,
+         ),
               child: Row(
                 children: [
                   Container(
@@ -186,17 +193,17 @@ class _ArticalScreenState extends State<ArticalScreen> {
                       text: TextSpan(
                         text: 'PM Modi Pune Visit Live Updates:\n',
                         style: TextStyle(
-                          color: Colors.black45,
+                          color: Colors.black54,
                           fontWeight: FontWeight.bold,
-                          fontSize: 17.0,
+                          fontSize: 15.0,
                         ),
                         children: [
                           TextSpan(
                             text: 'NPM @narendramodi praying to Sant Tukaram Ji in Pune. The ideals of Sant Tukaram motivate several people. ..........',
                             style: TextStyle(
-                              color: Colors.black45,
+                              color: Colors.black38,
                               fontWeight: FontWeight.bold,
-                              fontSize: 14.0,
+                              fontSize: 12.0,
                             ),
                           ),
                         ],
@@ -221,9 +228,10 @@ class _ArticalScreenState extends State<ArticalScreen> {
           // ),
 
           Container(decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(20.0),
-              color: Color.fromRGBO(0, 0, 0, 0.10),
-            ),
+            // borderRadius: BorderRadius.circular(20.0),
+            //color: Color.fromRGBO(0, 0, 0, 0.10),
+            color: Colors.white,
+          ),
               child: Row(
                 children: [
                   Container(
@@ -248,17 +256,17 @@ class _ArticalScreenState extends State<ArticalScreen> {
                       text: TextSpan(
                         text: 'PM Modi tops approval ratings among list of 13 global leader ..\n',
                         style: TextStyle(
-                          color: Colors.black45,
+                          color: Colors.black54,
                           fontWeight: FontWeight.bold,
-                          fontSize: 17.0,
+                          fontSize: 15.0,
                         ),
                         children: [
                           TextSpan(
                             text: 'NEW DELHI: Prime Minister Narendra Modi remains the world’s ..........',
                             style: TextStyle(
-                              color: Colors.black45,
+                              color: Colors.black38,
                               fontWeight: FontWeight.bold,
-                              fontSize: 14.0,
+                              fontSize: 12.0,
                             ),
                           ),
                         ],
@@ -283,9 +291,10 @@ class _ArticalScreenState extends State<ArticalScreen> {
           // ),
 
           Container(decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(20.0),
-              color: Color.fromRGBO(0, 0, 0, 0.10),
-            ),
+            // borderRadius: BorderRadius.circular(20.0),
+            //color: Color.fromRGBO(0, 0, 0, 0.10),
+            color: Colors.white,
+          ),
               child: Row(
                 children: [
                   Container(
@@ -310,17 +319,17 @@ class _ArticalScreenState extends State<ArticalScreen> {
                       text: TextSpan(
                         text: 'PM Modi Pune Visit Live Updates:.\n',
                         style: TextStyle(
-                          color: Colors.black45,
+                          color: Colors.black54,
                           fontWeight: FontWeight.bold,
-                          fontSize: 17.0,
+                          fontSize: 15.0,
                         ),
                         children: [
                           TextSpan(
                             text: 'PM Modi is followed by Mexico president López Obrador with 66% approval rating. US President Joe Biden is not in the list of the top 5 ...',
                             style: TextStyle(
-                              color: Colors.black45,
+                              color: Colors.black38,
                               fontWeight: FontWeight.bold,
-                              fontSize: 14.0,
+                              fontSize: 12.0,
                             ),
                           ),
                         ],

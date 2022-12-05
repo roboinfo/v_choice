@@ -10,8 +10,10 @@ class Chats extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      //backgroundColor: Colors.white,
+      backgroundColor: Color.fromRGBO(0, 0, 0, 0.10),
       appBar: AppBar(
+        backgroundColor: Colors.deepPurple,
         title: const Text('Voter\'s Choice'),
         leading: IconButton(
           icon: const Icon(Icons.arrow_back),

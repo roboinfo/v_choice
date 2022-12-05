@@ -77,27 +77,30 @@ class _DonationScreen2State extends State<DonationScreen2> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
-      appBar: AppBar(
-        backgroundColor: Colors.white70,
-        title: Row(
-          children: [
-            Icon(
-              Icons.monetization_on_outlined,
-              color: Colors.deepPurple,
-              size: 30.0,
-            ),
-            const Text(
-              '                   Donation',
-              textAlign: TextAlign.center,
-              style: TextStyle(
-                  color: Colors.black45,
-                  fontWeight: FontWeight.bold,
-                  fontSize: 22.0),
-            ),
-          ],
-        ),
-      ),
+      //backgroundColor: Colors.white,
+      backgroundColor: Color.fromRGBO(0, 0, 0, 0.10),
+
+      // appBar: AppBar(
+      //   backgroundColor: Colors.white70,
+      //   title: Row(
+      //     children: [
+      //       Icon(
+      //         Icons.monetization_on_outlined,
+      //         color: Colors.deepPurple,
+      //         size: 30.0,
+      //       ),
+      //       const Text(
+      //         '                   Donation',
+      //         textAlign: TextAlign.center,
+      //         style: TextStyle(
+      //             color: Colors.black45,
+      //             fontWeight: FontWeight.bold,
+      //             fontSize: 22.0),
+      //       ),
+      //     ],
+      //   ),
+      // ),
+
       body: Form(
         key: _formKey,
         child: SingleChildScrollView(
@@ -106,16 +109,17 @@ class _DonationScreen2State extends State<DonationScreen2> {
               child: Column(
                 children: [
                   const SizedBox(
-                    height: 10,
+                    height: 5,
                   ),
 
                   Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 0.0),
                     child: Container(
-                      padding: const EdgeInsets.only(top: 7.0, bottom: 7.0),
+                      padding: const EdgeInsets.only(top: 5.0, bottom: 5.0),
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(0.0),
-                        color: Color.fromRGBO(0, 0, 0, 0.10),
+                        //color: Color.fromRGBO(0, 0, 0, 0.10),
+                        color: Colors.white,
                       ),
                       child: Image.asset(
                         "assets/donation.png",
@@ -126,37 +130,35 @@ class _DonationScreen2State extends State<DonationScreen2> {
                   ),
 
                   const SizedBox(
-                    height: 10,
+                    height: 5,
                   ),
 
                   Container(
                     decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(20.0),
-                      color: Color.fromRGBO(0, 0, 0, 0.10),
+                      //borderRadius: BorderRadius.circular(20.0),
+                      //color: Color.fromRGBO(0, 0, 0, 0.10),
+                      color: Colors.white,
                     ),
-                    child: Row(
-                      children: [
-                        Padding(
-                          padding: const EdgeInsets.all(8.0),
-                          child: Row(
-                            children: [
-                              Icon(
-                                Icons.attach_money,
-                                color: Colors.deepPurple,
-                                size: 30.0,
-                              ),
-                              Text(
-                                '         Enter An Amount',
-                                textAlign: TextAlign.center,
-                                style: TextStyle(
-                                    color: Colors.black45,
-                                    fontWeight: FontWeight.bold,
-                                    fontSize: 22.0),
-                              ),
-                            ],
+
+                    child: Padding(
+                      padding: const EdgeInsets.all(5.0),
+                      child: Row(
+                        children: [
+                          Icon(
+                            Icons.person_add_alt_1,
+                            color: Colors.deepPurple,
+                            size: 30.0,
                           ),
-                        ),
-                      ],
+                          Text(
+                            '               Enter Details',
+                            textAlign: TextAlign.center,
+                            style: TextStyle(
+                                color: Colors.black45,
+                                fontWeight: FontWeight.bold,
+                                fontSize: 22.0),
+                          ),
+                        ],
+                      ),
                     ),
                   ),
 
@@ -315,7 +317,7 @@ class _DonationScreen2State extends State<DonationScreen2> {
                   //   ],
                   // ),
                   const SizedBox(
-                    height: 10,
+                    height: 5,
                   ),
                   Row(
                     children: <Widget>[
@@ -348,13 +350,14 @@ class _DonationScreen2State extends State<DonationScreen2> {
                         fit: FlexFit.tight,
                         child: Container(
                           padding: const EdgeInsets.only(
-                              top: 0.0, left: 20.0, right: 20.0),
+                              top: 0.0, left: 10.0, right: 10.0),
                           child: TextFormField(
                             autofocus: false,
                             decoration: InputDecoration(
                               filled: true,
                               //<-- SEE HERE
-                              fillColor: Color.fromRGBO(0, 0, 0, 0.10),
+                              //fillColor: Color.fromRGBO(0, 0, 0, 0.10),
+                              fillColor: Colors.white,
 
                               hintText: 'Enter Amount Here',
                               labelStyle: TextStyle(fontSize: 20.0),
@@ -376,41 +379,7 @@ class _DonationScreen2State extends State<DonationScreen2> {
                   ),
 
                   const SizedBox(
-                    height: 20,
-                  ),
-                  Container(
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(20.0),
-                      color: Color.fromRGBO(0, 0, 0, 0.10),
-                    ),
-                    child: Row(
-                      children: [
-                        Padding(
-                          padding: const EdgeInsets.all(8.0),
-                          child: Row(
-                            children: [
-                              Icon(
-                                Icons.privacy_tip_outlined,
-                                color: Colors.deepPurple,
-                                size: 30.0,
-                              ),
-                              Text(
-                                '      Select Platform',
-                                textAlign: TextAlign.center,
-                                style: TextStyle(
-                                    color: Colors.black45,
-                                    fontWeight: FontWeight.bold,
-                                    fontSize: 22.0),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-
-                  const SizedBox(
-                    height: 10,
+                    height: 5,
                   ),
 
                   Row(
@@ -444,9 +413,11 @@ class _DonationScreen2State extends State<DonationScreen2> {
                         fit: FlexFit.tight,
                         child: Padding(
                           padding: const EdgeInsets.only(
-                              top: 0.0, left: 20.0, right: 20.0),
+                              top: 0.0, left: 10.0, right: 10.0),
                           child: Container(
-                            color: Color.fromRGBO(0, 0, 0, 0.10),
+                            //color: Color.fromRGBO(0, 0, 0, 0.10),
+                            color: Colors.white,
+
                             child: Container(
                               decoration: BoxDecoration(
                                 // borderRadius: BorderRadius.circular(15.0),
@@ -751,13 +722,14 @@ class _DonationScreen2State extends State<DonationScreen2> {
                         fit: FlexFit.tight,
                         child: Container(
                           padding: const EdgeInsets.only(
-                              top: 0.0, left: 20.0, right: 20.0),
+                              top: 0.0, left: 10.0, right: 10.0),
                           child: TextFormField(
                             autofocus: false,
                             decoration: InputDecoration(
                               filled: true,
                               //<-- SEE HERE
-                              fillColor: Color.fromRGBO(0, 0, 0, 0.10),
+                              //fillColor: Color.fromRGBO(0, 0, 0, 0.10),
+                              fillColor: Colors.white,
 
                               hintText: 'Party Fund ▼',
                               labelStyle: TextStyle(fontSize: 20.0),
@@ -813,13 +785,14 @@ class _DonationScreen2State extends State<DonationScreen2> {
                         fit: FlexFit.tight,
                         child: Container(
                           padding: const EdgeInsets.only(
-                              top: 0.0, left: 20.0, right: 20.0),
+                              top: 0.0, left: 10.0, right: 10.0),
                           child: TextFormField(
                             autofocus: false,
                             decoration: InputDecoration(
                               filled: true,
                               //<-- SEE HERE
-                              fillColor: Color.fromRGBO(0, 0, 0, 0.10),
+                              //fillColor: Color.fromRGBO(0, 0, 0, 0.10),
+                              fillColor: Colors.white,
 
                               hintText: 'Enter Referral Code. ex.ABC123*F',
                               labelStyle: TextStyle(fontSize: 20.0),

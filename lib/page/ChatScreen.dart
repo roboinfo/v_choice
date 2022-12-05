@@ -52,7 +52,9 @@ class _ChatScreenState extends State<ChatScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: const Color(0xFFF6F6F6),
+
       appBar: AppBar(
+        backgroundColor: Colors.deepPurple,
         centerTitle: true,
         title: RichText(
           textAlign: TextAlign.center,

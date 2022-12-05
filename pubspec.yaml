@@ -56,6 +56,7 @@ dependencies:
   intl: ^0.17.0
   pay: ^1.0.11
   flutter_inappwebview: ^5.7.1
+  flutter_secure_storage: ^6.1.0
 
 
   #flutter_launcher_icons: ^0.9.3
@@ -126,6 +127,7 @@ flutter:
     - scheme2.png
     - scheme3.png
     - google.png
+    - galaxy.png
     - facebook.png
     - Instagram.png
     - twitter.png
@@ -139,6 +141,7 @@ flutter:
     - ad1.jpg
     - ad2.jpg
     - ad3.jpg
+    - ad4.jpg
     - pr1.jpg
     - pr2.jpg
     - pr3.jpg

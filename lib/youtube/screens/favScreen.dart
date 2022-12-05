@@ -16,6 +16,8 @@ class FavScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<FavScreen> {
+
+
   Channel? _channel;
   bool _isLoading = false;
 
@@ -145,8 +147,11 @@ class _HomeScreenState extends State<FavScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Color.fromRGBO(0, 0, 0, 0.10),
       appBar: AppBar(
         title: const Text('News Videos'),
+        backgroundColor: Colors.deepPurple,
+
       ),
       body: _channel != null
           ? NotificationListener<ScrollNotification>(

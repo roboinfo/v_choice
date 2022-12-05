@@ -3,9 +3,9 @@ import 'package:flutter/material.dart';
 import 'package:v_choice/page/home2.dart';
 import 'package:v_choice/youtube/screens/favScreen.dart';
 
-
 class Profile extends StatefulWidget {
   Color _iconColor = Colors.white;
+
   @override
   State<StatefulWidget> createState() {
     return ProfileState();
@@ -17,27 +17,27 @@ class ProfileState extends State<Profile> {
   Widget build(BuildContext context) {
     return Scaffold(
         backgroundColor: Colors.white,
+
         appBar: AppBar(
-          backgroundColor: Colors.white70,
-          title:
-          Row(
+          backgroundColor: Colors.deepPurple,
+          title: Row(
             children: [
-              Icon(Icons.verified_outlined,
-                color: Colors.deepPurple,
+              Icon(
+                Icons.verified_outlined,
+                color: Colors.white,
                 size: 30.0,
               ),
               const Text(
                 'Roboinfocom ',
                 textAlign: TextAlign.center,
-                style: TextStyle(color: Colors.deepPurple,
+                style: TextStyle(
+                    color: Colors.white,
                     fontWeight: FontWeight.bold,
                     fontSize: 22.0),
               ),
             ],
           ),
         ),
-
-
         body: ListView(
           children: <Widget>[
             Padding(
@@ -73,15 +73,19 @@ class ProfileState extends State<Profile> {
                         Text(
                           'Roboinfocom ',
                           textAlign: TextAlign.center,
-                          style: TextStyle(color: Colors.indigo,
+                          style: TextStyle(
+                              color: Colors.indigo,
                               fontWeight: FontWeight.bold,
                               fontSize: 25.0),
                         ),
-                        SizedBox(height: 10,),
+                        SizedBox(
+                          height: 10,
+                        ),
                         Text(
                           'Software company in PCMC',
                           textAlign: TextAlign.center,
-                          style: TextStyle(color: Colors.indigo,
+                          style: TextStyle(
+                              color: Colors.indigo,
                               fontWeight: FontWeight.bold,
                               fontSize: 22.0),
                         ),
@@ -89,7 +93,8 @@ class ProfileState extends State<Profile> {
                         Text(
                           'contactus@roboinfocom.com',
                           textAlign: TextAlign.center,
-                          style: TextStyle(color: Colors.indigo,
+                          style: TextStyle(
+                              color: Colors.indigo,
                               fontWeight: FontWeight.bold,
                               fontSize: 19.0),
                         ),
@@ -113,20 +118,20 @@ class ProfileState extends State<Profile> {
                       // ),
                     )
                   ],
-                )
-            ),
-            Padding(padding: const EdgeInsets.all(5),
+                )),
+            Padding(
+              padding: const EdgeInsets.all(5),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children:<Widget> [
+                children: <Widget>[
                   ElevatedButton(
-                    onPressed: (){},
-                    child:  const Text('Follow'),
+                    onPressed: () {},
+                    child: const Text('Follow'),
                   ),
-                 // SizedBox(height: 10,),
+                  // SizedBox(height: 10,),
                   ElevatedButton(
-                    onPressed: (){},
-                    child:  const Text('Message'),
+                    onPressed: () {},
+                    child: const Text('Message'),
                   ),
                 ],
               ),
@@ -179,7 +184,6 @@ class ProfileState extends State<Profile> {
                           color: Colors.grey,
                         ),
                       ),
-
                     ],
                   ),
                   Column(
@@ -205,7 +209,6 @@ class ProfileState extends State<Profile> {
                 ],
               ),
             ),
-
             Container(
               padding: const EdgeInsets.only(left: 10.0, right: 10.0),
               height: 200.0,
@@ -278,7 +281,3 @@ class ProfileState extends State<Profile> {
         ));
   }
 }
-
-
-
-
