@@ -230,7 +230,7 @@ class _VolunteerState extends State<Volunteer> {
                               fit: FlexFit.tight,
                               child: Container(
                                 padding: const EdgeInsets.only(
-                                    top: 0.0, left: 90.0, right: 20.0),
+                                    top: 0.0, left: 10.0, right: 10.0),
                                 child: TextFormField(
                                   autofocus: false,
                                   decoration: InputDecoration(
@@ -289,7 +289,7 @@ class _VolunteerState extends State<Volunteer> {
                               fit: FlexFit.tight,
                               child: Container(
                                 padding: const EdgeInsets.only(
-                                    top: 0.0, left: 90.0, right: 20.0),
+                                    top: 0.0, left: 10.0, right: 10.0),
                                 child: TextFormField(
                                   autofocus: false,
                                   decoration: InputDecoration(
@@ -348,7 +348,7 @@ class _VolunteerState extends State<Volunteer> {
                               fit: FlexFit.tight,
                               child: Container(
                                 padding: const EdgeInsets.only(
-                                    top: 0.0, left: 90.0, right: 20.0),
+                                    top: 0.0, left: 10.0, right: 10.0),
                                 child: TextFormField(
                                   autofocus: false,
                                   decoration: InputDecoration(
@@ -409,7 +409,7 @@ class _VolunteerState extends State<Volunteer> {
                               fit: FlexFit.tight,
                               child: Padding(
                                 padding: const EdgeInsets.only(
-                                    top: 0.0, left: 90.0, right: 20.0),
+                                    top: 0.0, left: 10.0, right: 10.0),
                                 child: Container(
                                   //color: Color.fromRGBO(0, 0, 0, 0.10),
                                   color: Colors.white,
@@ -477,7 +477,7 @@ class _VolunteerState extends State<Volunteer> {
                         ),
                         Container(
                           padding: const EdgeInsets.only(
-                              top: 0.0, left: 90.0, right: 20.0),
+                              top: 0.0, left: 10.0, right: 10.0),
                           child: TextFormField(
                             autofocus: false,
                             decoration: InputDecoration(
@@ -506,7 +506,7 @@ class _VolunteerState extends State<Volunteer> {
                         ),
                         Container(
                           padding: const EdgeInsets.only(
-                              top: 0.0, left: 90.0, right: 20.0),
+                              top: 0.0, left: 10.0, right: 10.0),
                           child: TextFormField(
                             autofocus: false,
                             decoration: InputDecoration(
@@ -563,7 +563,7 @@ class _VolunteerState extends State<Volunteer> {
                               fit: FlexFit.tight,
                               child: Padding(
                                 padding: const EdgeInsets.only(
-                                    top: 0.0, left: 90.0, right: 20.0),
+                                    top: 0.0, left: 10.0, right: 10.0),
                                 child: Container(
                                   //color: Color.fromRGBO(0, 0, 0, 0.10),
                                   color: Colors.white,
@@ -645,7 +645,7 @@ class _VolunteerState extends State<Volunteer> {
                               fit: FlexFit.tight,
                               child: Padding(
                                 padding: const EdgeInsets.only(
-                                    top: 0.0, left: 90.0, right: 20.0),
+                                    top: 0.0, left: 10.0, right: 10.0),
                                 child: Container(
                                   //color: Color.fromRGBO(0, 0, 0, 0.10),
                                   color: Colors.white,
@@ -725,7 +725,7 @@ class _VolunteerState extends State<Volunteer> {
                               fit: FlexFit.tight,
                               child: Container(
                                 padding: const EdgeInsets.only(
-                                    top: 0.0, left: 90.0, right: 20.0),
+                                    top: 0.0, left: 10.0, right: 10.0),
                                 child: TextFormField(
                                   autofocus: false,
                                   decoration: InputDecoration(
@@ -785,7 +785,7 @@ class _VolunteerState extends State<Volunteer> {
                               fit: FlexFit.tight,
                               child: Padding(
                                 padding: const EdgeInsets.only(
-                                    top: 0.0, left: 90.0, right: 20.0),
+                                    top: 0.0, left: 10.0, right: 10.0),
                                 child: Container(
                                   //color: Color.fromRGBO(0, 0, 0, 0.10),
                                   color: Colors.white,

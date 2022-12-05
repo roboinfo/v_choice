@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:v_choice/page/donationscreen.dart';
+import 'package:v_choice/page/events1.dart';
 import 'package:v_choice/page/mainslider.dart';
 import 'package:v_choice/page/storyviewpage.dart';
 import 'package:v_choice/page/utility/story_circle.dart';
@@ -229,37 +230,44 @@ class _EventScreenState extends State<EventScreen> {
 
 
 
-              Container(
-                color: Colors.white,
-                child: Column(
-                  children: [
-                    Container(
-                      padding: const EdgeInsets.only(top: 5.0),
-                      child: Image.asset(
-                        "assets/artical4.png",
-                        // height: 250,
-                        width: double.infinity,
-                      ),
-                    ),
-                    Row(
-                      children: const <Widget>[
-                        Flexible(
-                          flex: 1,
-                          fit: FlexFit.tight,
-                          child: Text(
-                            '\n PM Modi Live | '
-                            '\n PM Modis Mann Ki Baat Live | '
-                            '\n Narendra Modis Address To The Nation |',
-                            textAlign: TextAlign.center,
-                            style: TextStyle(
-                                color: Colors.black45,
-                                fontWeight: FontWeight.bold,
-                                fontSize: 17.0),
-                          ),
+              GestureDetector(
+                onTap: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) =>events1()));
+                },
+                child: Container(
+                  color: Colors.white,
+                  child: Column(
+                    children: [
+                      Container(
+                        padding: const EdgeInsets.only(top: 5.0),
+                        child: Image.asset(
+                          "assets/artical4.png",
+                          // height: 250,
+                          width: double.infinity,
                         ),
-                      ],
-                    ),
-                  ],
+                      ),
+                      Row(
+                        children: const <Widget>[
+                          Flexible(
+                            flex: 1,
+                            fit: FlexFit.tight,
+                            child: Text(
+                              '\n PM Modi Live | '
+                              '\n PM Modis Mann Ki Baat Live | '
+                              '\n Narendra Modis Address To The Nation |',
+                              textAlign: TextAlign.center,
+                              style: TextStyle(
+                                  color: Colors.black45,
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 17.0),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
                 ),
               ),
 
@@ -268,39 +276,46 @@ class _EventScreenState extends State<EventScreen> {
                 height: 5,
               ),
 
-              Container(
-                color: Colors.white,
-                child: Column(
-                  children: [
-                    Container(
-                      padding: const EdgeInsets.only(top: 5.0),
-                      child: Image.asset(
-                        "assets/artical5.png",
-                        // height: 250,
-                        width: double.infinity,
-                      ),
-                    ),
-                    Row(
-                      children: const <Widget>[
-                        Flexible(
-                          flex: 1,
-                          fit: FlexFit.tight,
-                          child: Text(
-                            '\nElections 2022: '
-                                '\nAssembly Election 2022 Dates, |'
-                                '\nResults, Opinion polls, | '
-                                '\nExit polls and News | '
-                                '\nTimes of India | ',
-                            textAlign: TextAlign.center,
-                            style: TextStyle(
-                                color: Colors.black45,
-                                fontWeight: FontWeight.bold,
-                                fontSize: 17.0),
-                          ),
+              GestureDetector(
+                onTap: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) =>events1()));
+                },
+                child: Container(
+                  color: Colors.white,
+                  child: Column(
+                    children: [
+                      Container(
+                        padding: const EdgeInsets.only(top: 5.0),
+                        child: Image.asset(
+                          "assets/artical5.png",
+                          // height: 250,
+                          width: double.infinity,
                         ),
-                      ],
-                    ),
-                  ],
+                      ),
+                      Row(
+                        children: const <Widget>[
+                          Flexible(
+                            flex: 1,
+                            fit: FlexFit.tight,
+                            child: Text(
+                              '\nElections 2022: '
+                                  '\nAssembly Election 2022 Dates, |'
+                                  '\nResults, Opinion polls, | '
+                                  '\nExit polls and News | '
+                                  '\nTimes of India | ',
+                              textAlign: TextAlign.center,
+                              style: TextStyle(
+                                  color: Colors.black45,
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 17.0),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
                 ),
               ),
 
@@ -311,38 +326,45 @@ class _EventScreenState extends State<EventScreen> {
 
 
 
-              Container(
-                color: Colors.white,
-                child: Column(
-                  children: [
-                    Container(
-                      padding: const EdgeInsets.only(top: 5.0),
-                      child: Image.asset(
-                        "assets/artical3.png",
-                        // height: 250,
-                        width: double.infinity,
-                      ),
-                    ),
-                    Row(
-                      children: const <Widget>[
-                        Flexible(
-                          flex: 1,
-                          fit: FlexFit.tight,
-                          child: Text(
-                            '\nElections 2023: '
-                                '\nAssembly Election 2022 Dates, |'
-                                '\nExit polls and News | '
-                                '\nTimes of India | ',
-                            textAlign: TextAlign.center,
-                            style: TextStyle(
-                                color: Colors.black45,
-                                fontWeight: FontWeight.bold,
-                                fontSize: 17.0),
-                          ),
+              GestureDetector(
+                onTap: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) =>events1()));
+                },
+                child: Container(
+                  color: Colors.white,
+                  child: Column(
+                    children: [
+                      Container(
+                        padding: const EdgeInsets.only(top: 5.0),
+                        child: Image.asset(
+                          "assets/artical3.png",
+                          // height: 250,
+                          width: double.infinity,
                         ),
-                      ],
-                    ),
-                  ],
+                      ),
+                      Row(
+                        children: const <Widget>[
+                          Flexible(
+                            flex: 1,
+                            fit: FlexFit.tight,
+                            child: Text(
+                              '\nElections 2023: '
+                                  '\nAssembly Election 2022 Dates, |'
+                                  '\nExit polls and News | '
+                                  '\nTimes of India | ',
+                              textAlign: TextAlign.center,
+                              style: TextStyle(
+                                  color: Colors.black45,
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 17.0),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
                 ),
               ),
 
