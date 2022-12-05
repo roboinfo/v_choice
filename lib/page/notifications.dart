@@ -8,8 +8,10 @@ class Notifications extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
+      //backgroundColor: Color.fromRGBO(0, 0, 0, 0.10),
       appBar: AppBar(
-          title:const Text("Notification ")
+          title:const Text("Notification "),
+          backgroundColor: Colors.deepPurple,
       ),
       body:   SingleChildScrollView(
         child: Column(
